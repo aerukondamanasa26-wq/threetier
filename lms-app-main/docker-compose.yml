@@ -27,7 +27,7 @@ services:
       - local-db
 
   web-server:
-    image: manasa112026/webcal:v2
+    image: webapp1:latest
     build: webapp/
     environment:
       - MODE=local
