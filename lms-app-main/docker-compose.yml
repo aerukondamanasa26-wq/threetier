@@ -14,7 +14,7 @@ services:
     #   - local-db-data:/var/lib/postgresql/data
 
   api-server:
-    image: lms-public-api
+    image: manasa112026/webcal:v1
     build: api/
     environment:
       - MODE=local
@@ -27,7 +27,7 @@ services:
       - local-db
 
   web-server:
-    image: lms-web
+    image: manasa112026/webcal:v2
     build: webapp/
     environment:
       - MODE=local
